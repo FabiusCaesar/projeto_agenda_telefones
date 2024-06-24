@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade M8</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Agenda de Contatos</h1>
+    </header>
+    <div class="container">
+        <form id="form-cadastro">
+            <div class="input-group">
+                <img src="./images/user.png" alt="Ícone de Contato" class="icon">
+                <input type="text" id="nome" required placeholder="Nome">
+            </div>
+            <div class="input-group">
+                <img src="./images/call.png" alt="Ícone de Telefone" class="icon">
+                <input type="tel" id="tel" required placeholder="Telefone">
+            </div>            
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do contato</th>
+                    <th>Telefone de contato</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

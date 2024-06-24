@@ -1,0 +1,128 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centralizar conteúdo */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Estilo do header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333333;
+}
+
+/* Estilo do container */
+.container {
+    width: 60%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Grupo de inputs com ícones */
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilo das imagens (ícones) */
+.input-group img.icon {
+    height: 24px; /* Define a altura dos ícones */
+    width: 24px; /* Define a largura para manter a proporção */
+    object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
+}
+
+/* Estilo dos inputs */
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 1em;
+    height: 44px; /* Altura dos imputs */
+}
+
+/* Estilo do botão */
+button {
+    padding: 10px;
+    background-color: #c49b00;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: rgba(196, 155, 0, 0.9);
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: separate; /* Use 'separate' para suportar bordas arredondadas */
+    border-spacing: 0; /* Remove espaçamento entre células */
+    background-color: #ffffff;
+    border-radius: 8px; /* Aplica o border-radius na tabela */
+    overflow: hidden; /* Garante que o conteúdo da tabela não ultrapasse os cantos arredondados */
+}
+
+thead {
+    background-color: #292928; /* Cor de fundo para cabeçalho */
+    color: #c49b00; /* Cor do texto do cabeçalho */
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1pz solid #cccccc;
+    text-align: left;
+}
+
+td {
+    border-bottom: 1px solid #333333;
+}
+
+
+th:first-child {
+    border-top-left-radius: 8px; /* Canto superior esquerdo arredondado */
+}
+
+th:last-child {
+    border-top-right-radius: 8px; /* Canto superior direito arredondado */
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 8px; /* Canto inferior esquerdo arredondado */
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 8px; /* Canto inferior direito arredondado */
+}
